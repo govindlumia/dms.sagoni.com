@@ -1,0 +1,268 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <link href="css/crm_style.css" rel="stylesheet" type="text/css" />
+
+    <%-- <script type="text/javascript" src="Jscript/Menu.js"></script>--%>
+
+    <%--<link href="http://fonts.googleapis.com/css?family=Armata" rel='stylesheet' type='text/css'>--%>
+
+    <title>::Sagoni India - HelpDesk:: </title>
+
+    <link rel="stylesheet" type="text/css" href="css/menu_style.css" />
+    <script type="text/javascript" src="Jscript/mtmv.js"></script>
+    <link href="css/doplus_style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript">
+        window.onload = blinkOn;
+
+        function blinkOn() {
+            document.getElementById("blink").style.color = "Black"
+            setTimeout("blinkOff()", 300)
+        }
+
+        function blinkOff() {
+            document.getElementById("blink").style.color = "Red"
+            setTimeout("blinkOn()", 300)
+        }
+
+
+
+    </script>
+    <style type="text/css">
+        /* Begin Navigation Bar Styling */
+        #nav {
+            width: 95%;
+            float: left;
+            margin: 0 0 3em 0;
+            padding: 0;
+            list-style: none;
+            background-color: #f2f2f2;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            height: 30px;
+        }
+
+            #nav li {
+                float: left;
+                height: 30px;
+            }
+
+                #nav li a {
+                    display: block;
+                    padding: 5px 15px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #069;
+                    border-right: 1px solid #ccc;
+                    height: 15px;
+                }
+
+                    #nav li a:hover {
+                        color: #c00;
+                        background-color: #fff;
+                        height: 15px;
+                    }
+        /* End navigation bar styling. */
+
+        /* This is just styling for this specific page. */
+    </style>
+</head>
+<body style="background-image: url('images/body_bg.jpg'); margin: 0px 0px 0px 0px">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" ScriptMode="Release">
+        </asp:ScriptManager>
+        <div id="wrapper">
+
+            <div style="width: 100%; background-color: #0B4770">
+
+                <table style="background: url(images/bg.png) left top repeat-x; width: 100%">
+                    <tr>
+                        <td valign="middle" style="width: 30%; text-align: left; font-size: 21px; color: rgb(228, 228, 228); text-shadow: 0px -1px 0px rgb(187, 183, 183);">
+Sagoni India
+                        </td>
+
+                        <td valign="middle">
+                            <table width="100%">
+
+                                <tr>
+                                    <td valign="middle" colspan="2" style="text-align: right; padding-right: 43px">
+                                        <a style="font-size: 14px; color: #FFF; font-weight: bold; text-decoration: none">Welcome</a>&nbsp;&nbsp;
+      <asp:Label ID="lblusername" runat="server" Text="" Font-Bold="true" ForeColor="#FFF" Style="color: #D8D8D8"></asp:Label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td valign="middle" colspan="2" style="text-align: right">
+                                        <asp:HyperLink ForeColor="#FFFFFF" NavigateUrl="changePassword.aspx" ID="HyperLink2" Text="Change Password" runat="server" Font-Bold="true" Font-Size="13px"></asp:HyperLink>
+                                        <span style="color: #FFF;">&nbsp;| </span>
+                                        <asp:LinkButton ID="LinkButton1" CausesValidation="false" runat="server" ForeColor="#FFFFFF" Font-Bold="true" Font-Size="13px" OnClick="LinkButton1_Click"> LOG OUT </asp:LinkButton>
+                                        <span style="color: #FFF;">| </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="middle" colspan="2" style="text-align: right; padding-right: 23px">
+                                        <asp:TextBox ID="txtsearch" runat="server" CssClass="search_textbox" Placeholder="Search"
+                                            OnTextChanged="txtsearch_TextChanged" AutoPostBack="True"></asp:TextBox>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </div>
+            <center>
+
+                <div style="background-color: #000; height: 30px; width: 100%"></div>
+
+                <table width="100%" cellpadding="0" cellspacing="0" style="height: 30px;">
+
+                    <tr>
+                        <td valign="top" style="width: 12%; background-color: #5696BC">
+                            <ul id="menu-v" style="">
+                                <li>
+                                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="home.aspx"> Home</asp:HyperLink>
+
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Request/Viewreq.aspx"> Request Dashboard</asp:HyperLink>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Request/Submit_Request.aspx">Submit a Request</asp:HyperLink>
+                                        <ul class="sub">
+                                            <li>
+                                                <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Request/Submit_Request.aspx">Submit A Request</asp:HyperLink></li>
+                                            <li>
+                                                <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/Request/View_request.aspx">View Your Request</asp:HyperLink></li>
+
+                                        </ul>
+                                    </li>
+
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink18" runat="server" NavigateUrl="home.aspx" CssClass="arrow">Admin</asp:HyperLink>
+
+                                    <ul class="sub">
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink20" runat="server" NavigateUrl="~/Branch/generate_branch.aspx">Create User Login</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink21" runat="server" NavigateUrl="~/Branch/Show_Branch_Login_Details.aspx">View User Login</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink32" runat="server" NavigateUrl="home.aspx" CssClass="arrow">Add Dropdown</asp:HyperLink>
+
+                                    <ul class="sub">
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="Company/Add_com_document.aspx">Add Dropdown Value </asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink24" runat="server" NavigateUrl="Company/View_Company.aspx">View Company </asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink34" runat="server" NavigateUrl="Company/ViewDocument.aspx">View Document Type</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink35" runat="server" NavigateUrl="Company/ViewFinancial.aspx">View Financial Year</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="Hypl_att" runat="server" NavigateUrl="home.aspx" CssClass="arrow">Employee</asp:HyperLink>
+
+                                    <ul class="sub">
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink25" runat="server" NavigateUrl="~/Customer/Customer_Entry.aspx">Add Employee Details</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink26" runat="server" NavigateUrl="~/Customer/ViewCustomer.aspx">View Employee Details</asp:HyperLink></li>
+                                        <%--   <li><asp:HyperLink ID="HyperLink29" runat="server" NavigateUrl="#">Insert Employee Details</asp:HyperLink></li>
+      <li><asp:HyperLink ID="HyperLink30" runat="server" NavigateUrl="#">View Employee Details</asp:HyperLink></li>--%>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="home.aspx" CssClass="arrow">Employee Login</asp:HyperLink>
+                                    <ul class="sub">
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ClientLogin/Client_insert.aspx">Create Employee login </asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/ClientLogin/ViewClient_Login.aspx">View Employee login</asp:HyperLink></li>
+                                        <%--   <li><asp:HyperLink ID="HyperLink29" runat="server" NavigateUrl="#">Insert Employee Details</asp:HyperLink></li>
+      <li><asp:HyperLink ID="HyperLink30" runat="server" NavigateUrl="#">View Employee Details</asp:HyperLink></li>--%>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <asp:HyperLink ID="hypl_sale" runat="server" NavigateUrl="home.aspx" CssClass="arrow"> Document Master</asp:HyperLink>
+                                    <ul class="sub">
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/Document/Document_upload.aspx">Add Document </asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink17" runat="server" NavigateUrl="~/Document/Viewupload.aspx">View Document </asp:HyperLink></li>
+                                        <%-- <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Document/View_document.aspx">View Document Client Details</asp:HyperLink></li>--%>
+                                    </ul>
+                                </li>
+                                <%--Investment Documents upload section Start--%>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/InvestmentDocument/InvestmentView_Admin.aspx">Investment Documents</asp:HyperLink>                                    
+                                </li>
+                                <%--Investment Documents upload section End--%>
+
+                                <li>
+                                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="ExcelImport.aspx" CssClass="arrow">Excel Import</asp:HyperLink>
+                                </li>
+                                <%--<li><asp:LinkButton  ID="LinkButtonReset" CausesValidation="false" runat="server" Font-Bold="true" OnClick="LinkButtonReset_Click"> Reset Data 
+        </asp:LinkButton></li>--%>
+                            </ul>
+                        </td>
+                        <td valign="top" style="width: 100%;">
+                            <center>
+                                <div id="content">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                                </div>
+                            </center>
+                        </td>
+                    </tr>
+
+                </table>
+
+
+
+
+            </center>
+
+
+
+        </div>
+
+        <!--endcontent-->
+
+        <!--endwrapper-->
+        <center>
+            <div id="footerwrapper">
+                <div style="width: 100%; background-color: #333333; height: 50px">
+                    <table width="960px">
+                        <tr>
+                            <td valign="middle" style="text-align: left">
+                                <p style="margin-top: 15px">
+                                    <a href="#" style="color: white; font-family: Calibri; font-size: 12px; text-decoration: none;"><b>© 2015 
+        Company All rights reserved</b></a><br />
+                                </p>
+                            </td>
+                            <td valign="middle" style="text-align: right">
+                                <p style="margin-top: 15px">
+                                    <a href="http://sagoni.com/" target="_blank" style="color: white; font-family: Calibri; font-size: 12px; text-decoration: none;"><b>Developed By SAGONI INDIA PRIVATE LIMITED </b></a>
+                                    <br />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </center>
+
+    </form>
+</body>
+</html>

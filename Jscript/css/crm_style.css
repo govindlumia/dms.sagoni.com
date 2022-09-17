@@ -1,0 +1,499 @@
+body
+{
+margin: 0px auto;
+text-align: left;
+font: normal 12px Verdana, Helvetica, sans-serif;
+line-height: 18px;
+
+}
+
+#footerwrapper{
+	background: #CAD5ED url(../_img/bg_sides_footer.gif) repeat-y center;
+}
+#footer{
+	background: #CAD5ED;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	height: 100px;
+}
+
+#footer p {
+	margin: 0;
+	color:Black;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	padding: 20px 0 0 30px;
+	float: left;
+}
+
+#footer p.right {
+	padding: 4px 30px;
+	float: right;
+}
+tr.pageTitle td
+{
+margin: 0px auto;
+padding-left: 6px;
+font: bold 13px Verdana;
+color: #fff;
+background-color:#666666;
+}
+
+.contentArea
+{
+margin: 0px auto;
+padding: 10px;
+background-color:#E9F0FC;
+border: 1px solid #466094;
+}
+
+.tblborder
+{
+border: 1px solid #466094;
+background-color: #fff;
+}
+
+a
+{
+text-decoration: none;
+color: #414141;
+/*color: #46546C;*/
+}
+
+a:hover
+{
+text-decoration: underline;
+color: #4d77c3;
+}
+
+.textField
+{
+border: 1px solid #7b9ebd;
+width: 250px;
+font-size: 11px;
+}
+
+tr.pageHeader td
+{
+margin: 0px auto;
+height: 40px;
+background-color: #fff;
+padding-left: 2px;
+}
+
+tr.topTitle td
+{
+margin: 0px auto;
+height: 3px;
+background-color: #466094;
+}
+
+
+h2
+{
+margin: 0px auto;
+font: bold 16px Verdana;
+color: #000000;
+
+}
+
+
+h3
+{
+margin: 0px auto;
+font: normal 14px Verdana;
+}
+.textbox
+{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+height:13px;
+
+}
+#member{
+        padding:10px;
+		margin:10px;
+		border:1px solid #000000;
+		background-color:#FFFFFF;
+		}
+#member h3{
+          font:bold 16px Arial, Helvetica, sans-serif;
+		  }
+#new_member{
+        border:1px solid #3A3A3A;
+		background-color:#FFFFFF;
+		margin:10px;
+		font:bold 12px Arial, Helvetica, sans-serif;
+		}
+#new_member h2 {
+               background-color:#3A3A3A;
+			   color:#FFFFFF;
+			   padding:3px;
+			   font:bold 16px Arial, Helvetica, sans-serif;
+			   }
+#new_member h3 {
+               padding:3px;
+			   font:bold 16px Arial, Helvetica, sans-serif;
+			   }
+   .gridHeader {
+	    background-color:#1B64A0;  
+	    background-image:url(/images/gridHeaderBg2.jpg);
+	    background-repeat:repeat-x;
+	    background-position:left top;
+	    color:white;
+	    margin:0 0 0 0;
+	    padding:6px;
+    }
+     .gridSearch {
+	    background-color:#CAD5ED;   
+	    border-bottom:solid 0px #999999;
+	    color:White;
+	    font-size:15px;
+	    margin:0px;
+	    padding:6px 8px 6px 4px;
+	    
+    }
+    .letterNavSelected {
+			background-color:#666666;
+			color:white;
+			cursor:pointer;
+			text-align:center;
+		}
+		.letterNav {
+		    color:white;
+		    padding:0px;
+        }
+		.letterNav td {
+			cursor:pointer;
+			text-align:center;
+			width:3%;
+		}
+		.letterNav td:hover {
+			background-color:#666666;
+			color:white;
+			text-decoration:none;
+		}
+		/* Styles for Grids */
+
+    .GridHeaderBar {
+	    padding-top:0px;
+	    padding-bottom:5px;
+    }
+
+    .GridNavBottom {
+	    background-color:#E6EBF7;
+	    border-bottom:1px solid #CCCCCC;
+	    border-left:1px solid #CCCCCC;
+	    border-right:1px solid #CCCCCC;
+	    color:black;
+	    font-family:Verdana, Arial, Helvetica, sans-serif;
+	    font-size:11px;
+	    margin-left:-1px;
+	    padding:5px;
+    }
+
+    .GridNavBottom td {
+	    font-size:11px;
+    }
+
+    .GridNavTop {
+	    background-color:#E6EBF7;
+	    border-top:1px solid #CCCCCC;
+	    border-left:1px solid #CCCCCC;
+	    border-right:1px solid #CCCCCC;
+	    color:black;
+	    font-family:Verdana, Arial, Helvetica, sans-serif;
+	    font-size:11px;
+	    margin-left:-1px;
+	    padding:5px;
+    }
+
+    .GridNavTop td {
+	    font-size:11px;
+    }
+
+    .GridNavTop a {
+	    font-size:11px;
+        text-decoration:none;
+    }
+
+    .GridNavTop a:hover {
+	    font-size:11px;
+        text-decoration:underline;
+    }
+
+    .gridItem {
+	    color:#000000;
+	    font-family:Verdana, Arial, Helvetica, sans-serif;
+	    font-size:12px;
+	    padding-left:6px;
+	    padding-right:8px;
+	    padding-bottom:6px;
+	    padding-top:6px;
+    }
+
+    .gridItem a {
+	    font-family:Verdana, Arial, Helvetica, sans-serif;
+	    font-size:12px;
+    }
+
+    .gridItemHeader {
+	    color:#666666;
+	    font-family:Verdana, Arial, Helvetica, sans-serif;
+	    font-size:12px;
+	    font-weight:bold;
+	    margin-left:2px;
+	    margin-right:2px;
+	    margin-bottom:6px;
+	    margin-top:6px;
+    }
+
+    .gridItemHeader a {
+	    background:#EEEEEE;
+	    color:#666666;
+	    font-family:Verdana, Arial, Helvetica, sans-serif;
+	    font-size:12px;
+	    font-weight:bold;
+	    text-decoration:none;
+	    margin-left:2px;
+	    margin-right:2px;
+    }
+
+    .gridItemHeader a:hover {
+	    background:#EEEEEE;
+	    color:blue;
+	    font-family:Verdana, Arial, Helvetica, sans-serif;
+	    font-size:12px;
+	    font-weight:bold;
+	    text-decoration:none;
+	    margin-left:2px;
+	    margin-right:2px;
+    }
+
+    .gridHeader {
+	    background-color:#1B64A0;   /*4e81ba;*/
+	    background-image:url(/images/gridHeaderBg2.jpg);
+	    background-repeat:repeat-x;
+	    background-position:left top;
+	    color:white;
+	    margin:0 0 0 0;
+	    padding:6px;
+    }
+
+    .gridHeader a {
+	    color:white;
+	    text-decoration:none;
+    }
+
+    .gridHeader a:hover {
+	    text-decoration:underline;
+    }
+
+    .gridHeaderSep {
+	    color:#d1d1d1;
+	    font-size:9px;
+	    margin:0px 10px;
+    }
+
+    .gridFilter {
+	    background-color:#d1d1d1;
+	    border-bottom:solid 1px #999999;
+	    color:#333333;
+	    font-size:12px;
+	    margin:0px;
+	    padding:6px 8px 6px 4px;
+	    text-align:right;
+    }
+
+    .gridSearch1 {
+	    background-color:#A0B0E0;   /*#D0E5F7;   /*#c7d7e9;*/
+	    border-bottom:solid 1px #999999;
+	    color:#030303;
+	    font-size:12px;
+	    margin:0px;
+	    padding:6px 8px 6px 4px;
+    }
+
+    .gridNav {
+	    background-color:#dedede;
+	    color:#030303;
+	    font-size:11px;
+	    margin:0px;
+	    padding:6px 8px 6px 4px;
+    }
+
+    .gridNav a, .gridNav td, .gridNav select {
+	    font-size:11px;
+    }
+
+    .gridNav a {
+	    color:#030303;
+	    font-size:9px;
+	    text-decoration:none;
+    }
+
+    .gridNav a:hover {
+	    color:#000000;
+	    border-bottom:dotted 1px;
+    }
+
+    .grid {
+	    border:solid 1px #666666;
+	    border-style :solid; 
+	    width:100%;
+	
+    }
+    
+        
+
+    
+
+    .grid tr:hover {
+	    background-color:#ffffef !important;
+    }
+
+    .gridFooterRow tr:hover {
+	    background-color:#eeeeee !important;
+    }
+
+    .grid td {
+	    border:solid 1px #dedede;
+	    line-height:150%;
+	  
+	    vertical-align:top;
+	
+	  
+	    
+    }
+
+    .grid td.imgCol {
+	    border-left:solid 1px #dedede;
+	    border-right:solid 1px #dedede;
+	    line-height:150%;
+	    padding:4px !important;
+	    vertical-align:top;
+    }
+
+    .grid td a {
+	    text-decoration:none;
+    }
+ 
+    .grid td a:hover {
+	    text-decoration:underline;
+    }
+
+    .grid th, .gridFooterRow {
+	    background-color:#eeeeee;
+	    border-left:solid 1px #dedede;
+	    border-right:solid 1px #dedede;
+	    border-top:solid 1px #dedede;
+	    border-bottom:solid 1px #eeeeee;
+	    color:#333333;
+	    font-weight:bold;
+	    padding:6px 15px 6px 4px;
+	    text-align:left;
+    }
+
+    .grid th a, .gridFooterRow a {
+	    color:#333333;
+	    font-weight:bold;
+	    text-decoration:none;
+    }
+
+    .grid th a:hover, .gridFooterRow a:hover {
+	    color:blue;
+	    font-weight:bold;
+	    text-decoration:underline;
+    }
+
+    .gridAltRow {
+	    background-color:#fafafa;
+    }
+
+    .gridNavSep {
+	    color:#999999;
+	    font-size:9px;
+	    margin:0px 5px;
+    }
+    td.header-right {
+    width:auto; 
+    vertical-align:middle; 
+    text-align:right;
+}
+#header-inner {
+    border-bottom:solid 1px #cccccc;
+    padding:0 0 15px 0;
+}
+
+--------------
+
+
+    .mGrid {   
+        width: 100%;   
+        background-color: #FFFFFF;   
+        margin: 1px 0 1px 0;   
+        border: solid 1px #525252;   
+        border-collapse:collapse;   
+    }  
+    .mGrid td {  
+        padding: 2px;   
+        border: solid 1px #c1c1c1;   
+        color: #000000;   
+    }  
+    .mGrid th {   
+        padding: 0px 0px;   
+        color: #FFFFFF;   
+        background: #267A75 url(grd_head.png) repeat-x top;   
+        border-left: solid 1px #525252;   
+        font-size: 0.9em;   
+         line-height: 15px;  
+    }  
+    .mGrid .alt { background: #fcfcfc url(grd_alt.png) repeat-x top; }  
+    .mGrid .pgr { background: #708090 url(grd_pgr.png) repeat-x top; }  
+    .mGrid .pgr table { margin: 5px 0; }  
+    .mGrid .pgr td {   
+        border-width: 0;   
+        padding: 0 6px;   
+        border-left: solid 1px #666;   
+        font-weight: bold;   
+        color: #fff;   
+        line-height: 12px;   
+     }     
+    .mGrid .pgr a { color: #FFFFFF; text-decoration: none; }  
+    .mGrid .pgr a:hover { color: #FFFFFF; text-decoration: none; }  
+
+  --------------------------------------------
+ .mGrid1 {   
+        width: 100%;   
+        background-color: #FFFFFF;   
+        margin: 1px 0 1px 0;   
+        border: solid 1px #525252;   
+        border-collapse:collapse;   
+    }  
+    .mGrid1 td {  
+        padding: 2px;   
+        border: solid 1px #c1c1c1;   
+        color: #000000;   
+    }  
+    .mGrid1 th {   
+        padding: 0px 0px;   
+        color: #FFFFFF;   
+        background: #267A75 url(grd_head.png) repeat-x top;   
+        border-left: solid 1px #525252;   
+        font-size:10pt;   
+         line-height: 25px;  
+    }  
+    .mGrid1 .alt { background: #fcfcfc url(grd_alt.png) repeat-x top; }  
+    .mGrid1 .pgr { background: #708090 url(grd_pgr.png) repeat-x top; }  
+    .mGrid1 .pgr table { margin: 5px 0; }  
+    .mGrid1 .pgr td {   
+        border-width: 0;   
+        padding: 0 6px;   
+        border-left: solid 1px #666;   
+        font-weight: bold;   
+        color: #fff;   
+        line-height: 12px;   
+     }     
+    .mGrid1 .pgr a { color: #FFFFFF; text-decoration: none; }  
+    .mGrid1 .pgr a:hover { color: #FFFFFF; text-decoration: none; }  
+
+ 
